@@ -1,0 +1,9 @@
+mage-ai
+pymysql
+pandas
+cryptography
+jupyter
+notebook
+snowflake-connector-python
+matplotlib
+tabulate

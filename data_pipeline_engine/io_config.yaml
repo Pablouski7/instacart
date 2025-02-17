@@ -1,0 +1,19 @@
+version: 0.1.1
+default:
+  # MySQL
+  MYSQL_DATABASE: instacart_db
+  MYSQL_HOST: "{{ env_var('MYSQL_HOST') }}"
+  MYSQL_PASSWORD: "{{ env_var('MYSQL_PSWD') }}"
+  MYSQL_PORT: "{{ env_var('MYSQL_PORT') }}"
+  MYSQL_USER: "{{ env_var('MYSQL_USER') }}"
+  # Snowflake
+  SNOWFLAKE_USER: "{{ env_var('SNOWFLAKE_USER') }}"
+  SNOWFLAKE_PASSWORD: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+  SNOWFLAKE_ACCOUNT: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+  SNOWFLAKE_DEFAULT_WH: "{{ env_var('SNOWFLAKE_DEFAULT_WH') }}"                # Optional default warehouse
+  SNOWFLAKE_DEFAULT_DB: "{{ env_var('SNOWFLAKE_DEFAULT_DB') }}"                 # Optional default database
+  SNOWFLAKE_DEFAULT_SCHEMA: "{{ env_var('SNOWFLAKE_DEFAULT_SCHEMA') }}"              # Optional default schema
+  SNOWFLAKE_PRIVATE_KEY_PASSPHRASE: null      # Optional private key passphrase
+  SNOWFLAKE_PRIVATE_KEY_PATH: null            # Optional private key path
+  SNOWFLAKE_ROLE: "{{ env_var('SNOWFLAKE_ROLE') }}"                      # Optional role name
+  SNOWFLAKE_TIMEOUT: null                     # Optional timeout in seconds
